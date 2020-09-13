@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>CareerGuru</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+	body,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: "Raleway", sans-serif
+	}
+
+	body,
+	html,
+	w3 {
+		background-color: #60B6FB;
+		height: 100%;
+		line-height: 1.8;
+	}
+
+
+
+	.w3-bar .w3-button {
+		padding: 16px;
+	}
+
+.button {
+  background-color: #96cf11;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: yellow;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+</style>
+
+<body>
+
+<!-- background -->
+<video autoplay muted loop id="myVideo">
+  <source src="background.mp4" type="video/mp4">
+</video>
+
+<div class="content">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3- w3-hide-small" style="color:black; position: relative; top: 55px; left: 125px;"><strong>Start Your Professional Journey Today </strong></span><br>
+   <br>
+    <span class="w3-xlarge" style="color:black;position: relative; top: 20px; left:325px;"><strong>Want to Learn About a Career but don't Know Where to Start?</strong></span>
+    <br><br>
+  </div>
+</div>
+
+
+
+
+	<!-- Navbar (sit on top) -->
+	<div class="w3-top">
+		<div class="w3-bar w3-lime w3-card" id="myNavbar">
+			<a href="#home" class="w3-bar-item w3-button w3-wide">CareerGuru <img src="logo.png" alt="our logo" style="width:50px;height:50px;"></a>
+
+
+			<!-- Right-sided navbar links -->
+			<div class="w3-right w3-hide-small">
+				<a href="#about" class="w3-bar-item w3-button">ABOUT US</a>
+				<a href="mentor.htm" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Find A Mentor</a>
+      <a href="https://discord.gg/QhgD9y"class="w3-bar-item w3-button"><i class="fa fa-users"></i> Browse Forums</a>
+      <a href="profile.htm" class="w3-bar-item w3-button"><i class="fa fa-id-card-o"></i> My Profile</a>
+      <button onclick="document.getElementById('id01').style.display='block'" class="w3-bar-item w3-button"style="width:auto;"><i class="fa fa-sign-in"></i> Login</button>
+      <a href="sign up.htm" class="w3-bar-item w3-button"><i class="fa fa-sign-in"></i>  Sign Up</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-volume-control-phone"></i> Contact Us</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-lime w3-card w3-animate-left w3-hide-medium w3-hide-large" style="background color = blue" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+  <a href="#mentor" onclick="w3_close()" class="w3-bar-item w3-button">FIND A MENTOR</a>
+  <a href="#forums" onclick="w3_close()" class="w3-bar-item w3-button">FORUMS</a>
+  <a href="#profile" onclick="w3_close()" class="w3-bar-item w3-button">MY PROFILE</a>
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+  <a href="#signup" onclick="w3_close()" class="w3-bar-item w3-button">SIGN UP</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT US</a>
+</nav>
+
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <a style="text-decoration:none" href="https://www.facebook.com/" <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a style="text-decoration:none" href="https://www.instagram.com/" <i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a style="text-decoration:none" href="https://www.snapchat.com/" <i class="fa fa-snapchat w3-hover-opacity"></i></a>
+    <a style="text-decoration:none" href="https://www.pinterest.ca/" <i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+    <a style="text-decoration:none" href="https://twitter.com/" <i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a style="text-decoration:none" href="https://ca.linkedin.com/" <i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ABOUT THE COMPANY</h3>
+  <p class="w3-center w3-large">WHO WE ARE AND WHAT WE BELIEVE IN</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-handshake-o w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">OUR MISSION</p>
+      <p>To help students gain a better understanding of available career paths through communcating with professionals and students</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">PASSION</p>
+      <p> CareerGuru is there to give everyone equal and free access to the resources they need to succeed in their professional lives</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-pencil-square-o w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">DESIGN</p>
+      <p> Our user friendly site makes it so that you can access help forums, professional profiles, and more with ease</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">SUPPORT</p>
+      <p>The CareerGuru team is constantly working to add more eager professionals to the site so you can continue networking with awesome individuals in the field. Our fast-growing forum is a hub for all members to connect and share their experiences</p>
+    </div>
+  </div>
+</div>
+
+<!-- Testemonials -->
+<div class="w3-container w3-yellow" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Student Testimonials</h3>
+      <p>What real students like you think of CareerGuru!</p>
+      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Testimonials</a></p>
+    </div>
+    <div class="w3-col m6">
+      
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<a style="text-decoration:none" href="cv.htm" ><div class="w3-container" style="padding:129px 40px" id="team">
+  <h3 class="w3-center">Professional Profiles</h3>
+  <p class="w3-center w3-large">Connect with a professional for a coffee chat!</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:60px">
+    <div class="w3-col l3 m8 w3-margin-bottom">
+      <div class="w3-card">
+        <div class="w3-container">
+          <h3>Samuel Dhuk</h3>
+          <p class="w3-opacity"></p>
+          <p>Samuel is a Project Manager at Microsoft with over 10+ years of experience</p>
+          <p><a href="https://mail.google.com/mail/u/0/#inbox?compose=new"<button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> 
+          Chat with me through my gmail<br>hungryhippo@gmail.com </button></p></a>
+        </div>
+      </div>
+    </div></a>
+    <div class="w3-col l3 m8 w3-margin-bottom" >
+      <div class="w3-card">
+        <div class="w3-container l3 m2 ">
+          <h3>Meaghan Brown</h3>
+          <p class="w3-opacity"></p>
+          <p>Meaghan is a bioinformatician working at St. Juno’s Hospital for Sick Children</p>
+          <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"<button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> 
+          Chat with me through my gmail<br>mbrown@gmail.com
+          </button></p></a>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m7 w3-margin-bottom">
+      <div class="w3-card">
+        <div class="w3-container">
+          <h3>Barah Mubeen</h3>
+          <p class="w3-opacity"></p>
+          <p>Barah is a clinical psychologist and professor at the University of Toronto</p>
+          <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"<button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> 
+          Chat with me through my gmail<br>barahm2@gmail.com
+          </button></p></a>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m5 w3-margin-bottom">
+      <div class="w3-card">
+        <div class="w3-container">
+          <h3>Jackie Wen</h3>
+          <p class="w3-opacity"></p>
+          <p>Jackie is a microbiologist who is working at John Hopkins as an advisor</p>
+          <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"<button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> 
+          Chat with me through my gmail<br>jackie.wen@gmail.com
+          </button></p></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-yellow w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">75+</span>
+    <br>Internships Acquired 
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">800+</span>
+    <br>Students
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">150+</span>
+    <br>Mentors
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge"> 1000+</span>
+    <br>Registered Accounts
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge"></span>
+    <br> 
+  </div>
+  
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-lime" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Are You Having Difficulties? Do You Have Any Suggestions? Or You Just Want to Tell Us How Great CareerGuru Is? Let Us Know!</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Toronto Ontario, Canada</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: (905)-887-3743</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: CareerGuru48@gmail.com</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit" onclick="myFunction()">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+        <script>
+        function myFunction() {
+            alert("Message successfully sent!");
+        }
+</script>
+      </p>
+    </form>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-lime w3-padding-64">
+
+  <div class="w3-xlarge w3-section">
+    <a style="text-decoration:none" href="https://www.facebook.com/" <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a style="text-decoration:none" href="https://www.instagram.com/" <i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a style="text-decoration:none" href="https://www.snapchat.com/" <i class="fa fa-snapchat w3-hover-opacity"></i></a>
+    <a style="text-decoration:none" href="https://www.pinterest.ca/" <i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+    <a style="text-decoration:none" href="https://twitter.com/" <i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a style="text-decoration:none" href="https://ca.linkedin.com/" <i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <a href="index.html"><button type="submit">Login</button></a>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <a href="index.html"> <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button></a>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+</body>
+</html>
