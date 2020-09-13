@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<title>Find a Mentor</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-blue w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-lime w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="logo.png" style="width:45%;" class="w3-round"><br><br>
+    <h4><a style="text-decoration:none" href="index.html"><b>CareerGuru</b></a></h4>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>MENTORS</a> 
+    <a href="profile.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>MY PROFILE</a> 
+  </div>
+  <div class="w3-panel w3-large">
+    <a style="text-decoration:none" href="https://www.facebook.com/" <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a style="text-decoration:none" href="https://www.instagram.com/" <i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a style="text-decoration:none" href="https://www.snapchat.com/" <i class="fa fa-snapchat w3-hover-opacity"></i></a>
+    <a style="text-decoration:none" href="https://www.pinterest.ca/" <i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+    <a style="text-decoration:none" href="https://twitter.com/" <i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a style="text-decoration:none" href="https://ca.linkedin.com/" <i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="logo.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>Browse Through Mentors You Can Connect With</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Filter:</span> 
+      <button class="w3-button w3-black">ALL</button>
+      <button class="w3-button w3-lime"><i class="fa fa-flask w3-margin-right"></i>Science</button>
+      <button class="w3-button w3-orange w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Art and Humanities</button>
+      <button class="w3-button w3-lime w3-hide-small"><i class="fa fa-pencil-square w3-margin-right"></i>Engineering</button>
+      <button class="w3-button w3-orange"><i class="fa fa-credit-card-alt w3-margin-right"></i>Business</button>
+      <button class="w3-button w3-lime"><i class="fa fa-flask w3-margin-right"></i>More Subjects...</button>
+    </div>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+     <a style="text-decoration:none" href="cv.htm"/a>
+      <img  src="https://cdn.discordapp.com/attachments/751899171807821924/754513590114844712/1_pAI1PrOH5gp2JLMBwS7YMA.jpeg" alt="Samuel" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-orange">
+        <p><b>Samuel Dhuk</b></p>
+        <p>Samuel is a Project Manager at Microsoft and has over 10 years of experience managing teams of professionals. He graduated with a BBA degree from University of Toronto and has since worked at Shopify, Nestle, and currently Microsoft. His hard work earned him employee of the year in 2019. His interests include stock investment, golfing, and playing Pokemon Go with his 2 children.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://cdn.discordapp.com/attachments/751899171807821924/754513828183539783/nur.jpg" alt="Meaghan Brown" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-orange">
+        <p><b> Meaghan Brown</b></p>
+        <p>Meaghan is a bioinformatician working at St. Juno’s Hospital for Sick Children. She graduated in 2018 with a specialist in Bioinformatics and Computational Biology from University of British Columbia. She uses her expertise in statistics and technology to gather and analyze data in fields such as population health and biology. In her free time, she enjoys nature hikes and drinking bubble tea with her friends. 
+</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="https://cdn.discordapp.com/attachments/751899171807821924/754514286067580949/20121229__davidshaw3.jpg" alt="Hamid" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-orange">
+        <p><b>Hamid Shakir</b></p>
+        <p>Hamid currently works as Lead Experience Coordinator at Stanford University. His work includes analyzing student involvement at the university and creating inclusive spaces and activities on campus. He has a Masters in Social Work from NYU. In his spare time, Hamid volunteers at his local homeless shelter and is a strong advocate for human rights. 
+</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src=" https://cdn.discordapp.com/attachments/751899171807821924/754514402501197944/Cashmere_Nicole_Forbes_Profile_large.jpg" alt="Melissa" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-orange">
+        <p><b>Melissa Singh</b></p>
+        <p>Melissa is the owner of 3 beauty parlors across London, UK. During her 3’rd undergraduate year at University of London, Melissa founded her own business called Yule Tide, which sells eco-friendly care packages and successfully generated profit in her first year of sales! Melissa enjoys creating videos on YouTube and is a competitive figure skater. 
+</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://cdn.discordapp.com/attachments/751899171807821924/754514993361453126/Screen_Shot_2020-09-12_at_9.32.59_PM.png" alt="Barah" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-orange">
+        <p><b>Barah Mubeen</b></p>
+        <p>Barah is a clinical psychologist and professor at the University of Toronto. While getting her HBSc from McMaster University, she worked at CAMH with the geriatric unit, which sparked her interest in gerontology research. She earned her PhD in 2019 while doing gerontology research. She works closely to understand the impacts of Mental Health, specifically depression, on the elderly population in Canada. In her spare time, she enjoys watching Breaking Bad and training mental health crisis responders with Kids Help Phone. 
+</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="https://cdn.discordapp.com/attachments/751899171807821924/754514718798119063/cc_1_MAIN_GettyImages-643961442_1280p.jpg" alt="Jackie Wen" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-orange">
+        <p><b>Jackie Wen</b></p>
+        <p>Jackie is a microbiologist who is working at John Hopkins as an advisor. She graduated with a degree from Harvard University in microbiology in 2016 and has since taught several undergraduate classes in biology and conservation. Jackie has a masters in Environmental Science from Queens University. She enjoys scuba diving with her fiance and biking along the beach. 
+</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </footer>
+  
+  <div class="w3-container w3-black w3-center w3-padding-24"><a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity"></a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
